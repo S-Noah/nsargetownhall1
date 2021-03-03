@@ -1,0 +1,140 @@
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 800px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+html {
+	background-color: white;
+}
+/* the styles for the header */
+
+header {
+	padding-top: 1px;
+	border-bottom: 3px solid #931420;
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+header img {
+	float: left;
+	
+}
+header h1 {
+	font-size: 170%;
+	color: #800000;
+	text-indent: 30px;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	text-indent: 30px;
+	bott
+
+}
+header h3 em {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+/* the styles for the section */
+main {
+	clear: left;
+}
+main section {
+	width: 525px;
+	float: right;
+	padding: 0px 20px 20px;
+}
+main aside {
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+section h2 {
+	font-size: 130%;
+	color: #800000;
+	padding: .5em .0em .25em;
+
+}
+aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding: .5em .0em .25em;
+
+}
+aside h3 {
+	padding-bottom: .25em;
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+	padding-bottom: 1em;
+}
+section p {
+	word-wrap: break-word;
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: .0em 2em;
+	font-style: italic;
+}
+section ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
+a:hover{
+	font-style: italic;
+}
+
+section article {
+	padding: .5em 0em;
+	border-bottom: 2px solid #800000;
+}
+section h1 {
+	font-size: 150%;
+	padding-top: .5em;
+    margin-top: 1px;
+	margin-bottom: 1px;
+}
+article h1 {
+	padding-top: 0px;
+    margin: 0px;
+}
+article h2 {
+	font-size: 105%;
+    margin: 0px;
+    padding: 0px;
+}
+article img {
+	float: right;
+	margin: 2px 0px 4px 2px;
+	border: 1px solid black;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #931420;
+	color: white;
+	padding-bottom: 0.5px;
+	clear: both;
+}
+footer h1 {
+	font-size: 150%;
+}
+footer h2 {
+	font-size: 130%;
+	color: #800000;
+}
+footer h3 {
+	font-size: 105%;
+}
+footer p {
+	text-align: center;
+	padding: 1em 0em;
+}
