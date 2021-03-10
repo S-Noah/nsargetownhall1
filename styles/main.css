@@ -1,141 +1,171 @@
 /* the styles for the elements */
-body {
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-	width: 800px;
-	margin: 0 auto;
-	border: 3px solid #931420;
-	background-color: #fffded;
+* {
+	margin: 0;
+	padding: 0;
 }
 html {
 	background-color: white;
 }
-/* the styles for the header */
-
-header {
-	padding-top: 1px;
-	border-bottom: 3px solid #931420;
-	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 900px;
+    margin: 0 auto;
+    border: 3px solid #800000;
+    background-color: #fffded;
 }
-header img {
-	float: left;
-	
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #931420;
+	background-image: -moz-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
+	background-image: linear-gradient(
+	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
 }
 header h2 {
-	font-size: 170%;
+	font-size: 175%;
 	color: #800000;
-	text-indent: 30px;
 }
 header h3 {
 	font-size: 130%;
 	font-style: italic;
-	text-indent: 30px;
-	bott
-
 }
-header h3 em {
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
-/* the styles for the section */
+/* the styles for the main content */
 main {
 	clear: left;
 }
-main section {
+/* the styles for the section */
+section {
 	width: 525px;
 	float: right;
-	padding: 0px 20px 20px;
+	padding: 0 20px 20px 20px;
 }
-main aside {
-	width: 215px;
-	float: right;
-	padding-left: 20px;
-	padding-bottom: 20px;
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;               /* If you remove this, the margins in normalize.css will be applied. */
 }
 section h2 {
-	font-size: 130%;
 	color: #800000;
-	padding: .5em .0em .25em;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
 
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/* the styles for the aside */
+aside {
+	width: 215px;
+	float: right;
+	padding: 0 0 20px 20px;
 }
 aside h2 {
-	font-size: 130%;
 	color: #800000;
-	padding: .5em .0em .25em;
-
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
 }
+
 aside h3 {
-	padding-bottom: .25em;
 	font-size: 105%;
 	padding-bottom: .25em;
 }
 aside img {
 	padding-bottom: 1em;
-	padding-bottom: 1em;
-}
-section p {
-	word-wrap: break-word;
-	padding-bottom: .5em;
-}
-section blockquote {
-	padding: .0em 2em;
-	font-style: italic;
-}
-section ul {
-	padding-bottom: .25em;
-	padding-left: 1.25em;
-}
-section li {
-	padding-bottom: .35em;
-}
-a:hover{
-	font-style: italic;
-}
-
-section article {
-	padding: .5em 0em;
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
-}
-section h1 {
-	font-size: 150%;
-	padding-top: .5em;
-	margin-top: 1px;
-	margin-bottom: 1px;
-}
-article h2 {
-	padding-top: 0px;
-}
-article h3 {
-	font-size: 105%;
-}
-article p {
-	width: 300px;
-}
-article img {
-	float: right;
-	margin: 2px 0px 4px 2px;
-	border: 1px solid black;
 }
 
 /* the styles for the footer */
 footer {
 	background-color: #931420;
-	color: white;
-	padding-bottom: 0.5px;
 	clear: both;
-}
-footer h1 {
-	font-size: 150%;
-}
-footer h2 {
-	font-size: 130%;
-	color: #800000;
-}
-footer h3 {
-	font-size: 105%;
+
 }
 footer p {
 	text-align: center;
-	padding: 1em 0em;
+	color: white;
+	padding: 1em 0;
 }
